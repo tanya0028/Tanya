@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- fav icon -->
+    <link rel="Shortcut icon" href="./favicon.png" type="images/x-icon">
+    <!-- custom css -->/
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <title>Cutie Pie</title>
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- AOS ANIMATION -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .topbtn {
+            display: none;
+            cursor: pointer;
+            position: fixed;
+            bottom: 40px;
+            right: 20px;
+            z-index: 999;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: #1b8545;
+            border: none;
+        }
+
+        .topbtn i {
+            font-size: 2vw;
+            color: #111;
+        }
+    </style>
+    <!-- AOS ANIMATION  -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #2f95dd75;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">TANYA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="features.html" target="_blank">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pricing.html" target="_blank">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html" target="_blank">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/himg1.jpg" class="d-block w-100" style="height: 470px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/hmig2.jpg" class="d-block w-100" style="height: 470px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/himg3.jpg" class="d-block w-100" style="height: 470px;" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <section>
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom text-center"> <i class="fa-solid fa-arrows-to-dot fa-bounce"></i> my images <i
+                    class="fa-solid fa-arrows-to-dot fa-flip"></i></h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('./images/card1.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="./images/card1.jpg" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small></small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small></small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('./images/card2.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple
+                                lines</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="./images/card2.jpg" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small></small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small></small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                        style="background-image: url('./images/card3.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto">
+                                    <img src="./images/card3.jpg" alt="Bootstrap" width="32" height="32"
+                                        class="rounded-circle border border-white">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#geo-fill" />
+                                    </svg>
+                                    <small></small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em">
+                                        <use xlink:href="#calendar3" />
+                                    </svg>
+                                    <small></small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+                <h2 class="pb-2  text-center"> <i class="fa-solid fa-arrows-to-dot fa-bounce"></i> my
+                    Blogs <i class="fa-solid fa-arrows-to-dot fa-flip"></i></h2>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/bimg1.jpg" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000" class="bd-placeholder-img card-img-top" width="100%"
+                                height="225" />
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary bg-success">Read
+                                            more</button>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/bimg2.jpg" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000" class="bd-placeholder-img card-img-top" width="100%"
+                                height="225" />
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary bg-success">Read
+                                            more</button>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/bimg3.jpg" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000" class="bd-placeholder-img card-img-top" width="100%"
+                                height="225" />
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary bg-success">Read
+                                            more</button>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/bimg4.jpg" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000" class="bd-placeholder-img card-img-top" width="100%"
+                                height="225" />
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary bg-success">Read
+                                            more</button>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/bimg5.jpg" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000" class="bd-placeholder-img card-img-top" width="100%"
+                                height="225" />
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary bg-success">Read
+                                            more</button>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="./images/bimg6.jpg" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                                data-aos-duration="2000" class="bd-placeholder-img card-img-top" width="100%"
+                                height="225" />
+                            <div class="card-body">
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-sm btn-outline-secondary bg-success">Read
+                                            more</button>
+                                        <!-- <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button> -->
+                                    </div>
+                                    <small class="text-body-secondary">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="d-flex justify-content-center">
+            <div class="row container d-flex justify-content-center text-center">
+                <div class="col-lg-4">
+                    <img src="./images/pimg1.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140"
+                        height="140">
+                    <h2 class="fw-normal">Aarwi</h2>
+                    <p>Some representative placeholder content for the three columns of text below the carousel. This is
+                        the first column.</p>
+                    <p><a class="btn btn-secondary bg-danger" href="#">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="./images/pimg2.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140"
+                        height="140">
+
+                    <h2 class="fw-normal">Divya</h2>
+                    <p>Another exciting bit of representative placeholder content. This time, we've moved on to the
+                        second column.</p>
+                    <p><a class="btn btn-secondary bg-danger" href="#">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img src="./images/pimg3.jpg" alt="" class="bd-placeholder-img rounded-circle" width="140"
+                        height="140">
+                    <h2 class="fw-normal">Aarohi</h2>
+                    <p>And lastly this, the third column of representative placeholder content.</p>
+                    <p><a class="btn btn-secondary bg-danger" href="#">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div>
+        </div>
+    </section>
+    <footer class="d-flex justify-content-center">
+        <div class=" row container">
+            <div>
+                <h2>Contact Us </h2>
+                <p> Email:info@gmail.com</p>
+                <p>+91 9999900007</p>
+            </div>
+            <div class="col 4-8 "></div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.3057939117443!2d77.52918757450459!3d28.50044609006839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceaef1d797e97%3A0x3392cbea1db87b24!2sAmrapali%20Grand%20Apartment!5e0!3m2!1sen!2sin!4v1716382084796!5m2!1sen!2sin"
+                width="100px" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+    </footer>
+    <button class="topbtn"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <!--    
+    Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- AOS ANIMATION -->
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        ////////////////////////////////// top scroll ////////////////////////////////////////// 
+        const button = document.querySelector('.topbtn');
+
+        const displayButton = () => {
+            window.addEventListener('scroll', () => {
+                console.log(window.scrollY);
+
+                if (window.scrollY > 100) {
+                    button.style.display = "block";
+                } else {
+                    button.style.display = "none";
+                }
+            });
+        };
+
+        const scrollToTop = () => {
+            button.addEventListener("click", () => {
+                window.scroll({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+                console.log(event);
+            });
+        };
+
+        displayButton();
+        scrollToTop();
+
+
+    </script>
+   
+
+</body>
+
+
+</html>
